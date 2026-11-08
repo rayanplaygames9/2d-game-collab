@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://blvs48d2w72nr"]
+
+[ext_resource type="Texture2D" uid="uid://du37lx2dycd1a" path="res://icon.svg" id="1_oul6g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tapir"]
+size = Vector2(52, 42)
+
+[node name="Player" type="CharacterBody2D" unique_id=570881517]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=654033919]
+scale = Vector2(0.40625, 0.328125)
+texture = ExtResource("1_oul6g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1811128459]
+shape = SubResource("RectangleShape2D_tapir")
